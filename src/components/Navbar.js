@@ -51,8 +51,8 @@ const Navbar = () => {
                     <Avatar sx={{ width: 30, height: 30 }} onClick={e => setOpen(true)} />
                 </Icons>
                 <UserBox onClick={e => setOpen(true)}>
-                    <Avatar sx={{ width: 30, height: 30 }} />
                     <Typography variant='span'>Jagathees</Typography>
+                    <Avatar sx={{ width: 30, height: 30 }} />
                 </UserBox>
             </StyledToolbar>
 

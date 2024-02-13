@@ -2,10 +2,10 @@ import React from 'react'
 import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material'
 import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
 
-const Posts = () => {
+const Posts = ({image}) => {
     return (
         // <Box flex={4} p={2}>
-        <Card sx={{ margin: 5 }}>
+        <Card sx={{ margin: 1 }}>
             <CardHeader
                 avatar={
                     <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
@@ -23,7 +23,7 @@ const Posts = () => {
             <CardMedia
                 component="img"
                 height="20%"
-                image="https://img.freepik.com/free-photo/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky_181624-2490.jpg?w=996&t=st=1707726900~exp=1707727500~hmac=c40fc2f54c8fe0e4d74dfe8b7b1d65d70fe9e67e4ac53233a5e14ad1542771ca"
+                image={image}
                 alt="Paella dish"
             />
             <CardContent>
